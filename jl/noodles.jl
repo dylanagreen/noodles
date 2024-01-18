@@ -9,7 +9,7 @@ function nnls(A, y, eps=1e-3)
   P = zeros(Bool, size(x))
   R = ones(Bool, size(x))
 
-  A = copy(W_true)
+  A = copy(A)
   u = transpose(A) * y
   max_iter = 100
   n_iter = 0
